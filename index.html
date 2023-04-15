@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cholera Map</title>
+    <!-- Include the D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>John Snow's Cholera Map</h1>
+  <div id="filters">
+    <h3>Filters</h3>
+    <label for="age-filter">Age Group:</label>
+    <select id="age-filter">
+      <option value="">All</option>
+      <option value="0">0-10</option>
+      <option value="1">11-20</option>
+      <option value="2">21-40</option>
+      <option value="3">41-60</option>
+      <option value="4">61-80</option>
+      <option value="5">>80</option>
+    </select>
+    <br>
+    <label for="sex-filter">Sex:</label>
+    <select id="sex-filter">
+      <option value="">All</option>
+      <option value="0">Male</option>
+      <option value="1">Female</option>
+    </select>
+    <br>
+    <label for="date-filter">Date Range:</label>
+    <input type="range" id="date-filter" min="1" max="31" value="31" step="1">
+    <span id="date-display">All</span>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
